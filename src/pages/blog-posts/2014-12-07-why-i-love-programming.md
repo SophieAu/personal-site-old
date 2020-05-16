@@ -25,7 +25,7 @@ How is this a todo list you might ask. Here’s how:
 2. You tell the program what to do: It is supposed to print the sentence “Hello World!” in the console (my wallpaper, although my parents would kill me for that)
 
 Now, a pseudo-code example that is closer to reality might look like this:
-```java
+```
 SophiesHouse {
     SophiesRoom {
         while(desk == not tidy){
