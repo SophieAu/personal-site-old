@@ -1,7 +1,7 @@
 ---
 title: "Working on an existing Gatsby Project"
-date: 2020-06-07
-updated: 2020-06-07
+date: 2020-05-31
+updated: 2020-05-31
 categories: react gatsby
 slug: "existing-gatsby-set-up"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Accessibility in React Native"
-date: 2020-05-31
-updated: 2020-05-31
+date: 2020-06-07
+updated: 2020-06-07
 categories: react
 slug: "react-native-accessibility"
 ---
