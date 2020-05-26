@@ -9,6 +9,24 @@ import Layout from '../layouts';
 import { post as string } from '../strings';
 import { SingleGraphQLResponse } from '../types';
 
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+        date(formatString: "DD MMMM YYYY")
+        slug
+        crosspost {
+          site
+          url
+          hasPrefix
+        }
+      }
+    }
+  }
+`;
+
 const Post: React.FC<SingleGraphQLResponse> = ({ data: { markdownRemark: post } }) => (
   <Layout>
     <SEO
@@ -30,23 +48,5 @@ const Post: React.FC<SingleGraphQLResponse> = ({ data: { markdownRemark: post } 
     </article>
   </Layout>
 );
-
-export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        date(formatString: "DD MMMM YYYY")
-        slug
-        crosspost {
-          site
-          url
-          hasPrefix
-        }
-      }
-    }
-  }
-`;
 
 export default Post;
