@@ -21,12 +21,12 @@ exports.createPages = async ({ graphql, actions }) => {
   if (errors) return;
 
   const component = path.resolve(`./src/templates/post.tsx`);
+  const pageData = slug => ({ path: `article/${slug}`, component, context: { slug } });
 
   data.allMarkdownRemark.edges.forEach(({ node }) => {
     if (node.frontmatter.draft) return;
 
-    const { slug } = node.frontmatter;
-    actions.createPage({ path: `article/${slug}`, component, context: { slug } });
+    actions.createPage(pageData(node.frontmatter.slug));
   });
 };
 
