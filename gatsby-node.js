@@ -8,6 +8,7 @@ const QUERY = `{
       node {
         frontmatter {
           slug
+          draft
         }
       }
     }
@@ -15,30 +16,22 @@ const QUERY = `{
 }
 `;
 
-exports.createPages = ({ graphql, actions }) =>
-  new Promise((resolve, _) => {
-    graphql(QUERY).then(result => {
-      console.log(JSON.stringify(result, null, 4));
+exports.createPages = async ({ graphql, actions }) => {
+  const { data, errors } = await graphql(QUERY);
+  if (errors) return;
 
-      const nodes = result.data.allMarkdownRemark.edges;
-      nodes.forEach(({ node }) => {
-        actions.createPage({
-          path: 'article/' + node.frontmatter.slug,
-          component: path.resolve(`./src/templates/post.tsx`),
-          context: { slug: node.frontmatter.slug },
-        });
-      });
+  const component = path.resolve(`./src/templates/post.tsx`);
 
-      resolve();
-    });
+  data.allMarkdownRemark.edges.forEach(({ node }) => {
+    if (node.frontmatter.draft) return;
+
+    const { slug } = node.frontmatter;
+    actions.createPage({ path: `article/${slug}`, component, context: { slug } });
   });
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type !== `MarkdownRemark`) return;
 
-  actions.createNodeField({
-    name: `slug`,
-    node,
-    value: createFilePath({ node, getNode }),
-  });
+  actions.createNodeField({ name: `slug`, node, value: createFilePath({ node, getNode }) });
 };
