@@ -4,6 +4,7 @@ date: 2020-04-05
 updated: 2020-04-09
 categories: web-dev javascript
 slug: "tech-stack"
+draft: false
 ---
 
 As a front-end dev and hobby web developer my stack is pretty JavaScript heavy. But I'm still playing around with other languages every once in a while. I'm pretty happy with JavaScript (and TypeScript) at the moment though so there's not too much else going on...

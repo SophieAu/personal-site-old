@@ -1,9 +1,10 @@
 ---
-title:	"Setting up jekyll on Fedora"
-date:	2017-02-28
-updated:	2017-02-28
+title: "Setting up jekyll on Fedora"
+date: 2017-02-28
+updated: 2017-02-28
 categories: jekyll fedora linux
 slug: "jekyll-fedora"
+draft: false
 ---
 Since jekyll is a ruby gem, you need to install ruby with its developer tools.
 

@@ -1,9 +1,10 @@
 ---
-title:	"The Only 11 Git Commands You Really Need"
-date:	2018-05-30
-updated:	2018-05-30
+title: "The Only 11 Git Commands You Really Need"
+date: 2018-05-30
+updated: 2018-05-30
 categories: git
 slug: "git-commands"
+draft: false
 ---
 
 Git is amazing and pretty much everywhere nowadays. But with its popularity comes an almost infinite list of commands which can confuse and intimidate many folks in the beginning. I mean, the most recommended book I could find is around [500 pages](https://www.git-scm.com/book/en/v2It)! Who has the time or patience to read all this when all they want to do is work an a small side project?

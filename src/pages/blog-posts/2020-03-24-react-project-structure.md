@@ -4,6 +4,7 @@ date: 2020-03-24
 updated: 2020-03-24
 categories: javascript react
 slug: "react-project-structure"
+draft: false
 ---
 
 This is my personal guideline on how I structure my react projects (which are mostly static sites). It's what works for me but don't take this as gospel. Note that this folder assumes that the project is using [TypeScript](https://www.typescriptlang.org/) and [linaria](https://linaria.now.sh/). It should be easy enough to translate it to JavaScript and e.g. [CSS Modules](https://github.com/css-modules/css-modules).

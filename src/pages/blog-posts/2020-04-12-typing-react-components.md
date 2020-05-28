@@ -4,6 +4,7 @@ date: 2020-04-12
 updated: 2020-04-12
 categories: react typescript
 slug: "typing-react-components"
+draft: false
 ---
 
 When using TypeScript you won't get around having to type React components. This usually happens when you want to pass them as props. When you get to that point you suddenly have a ton of different types to choose from. Below are the main contenders with pseudo-coded typings:

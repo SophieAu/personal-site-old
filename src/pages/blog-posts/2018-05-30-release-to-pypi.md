@@ -1,9 +1,10 @@
 ---
-title:	"Releasing a Command-Line App to PyPI When It Really Doesn't Want You To"
-date:	2018-05-30
-updated:	2018-05-30
+title: "Releasing a Command-Line App to PyPI When It Really Doesn't Want You To"
+date: 2018-05-30
+updated: 2018-05-30
 categories: python pypi
 slug: "pypi-release"
+draft: false
 ---
 
 Around the turn of the year, I wrote a small command line tool, [snipster](https://github.com/SophieAu/snipster) which I then released on both GitHub and PyPI.

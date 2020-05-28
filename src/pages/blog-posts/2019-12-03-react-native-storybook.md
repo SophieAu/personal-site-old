@@ -1,13 +1,14 @@
 ---
-title:  "Setting up Storybook for React Native"
-date:   2019-12-03
-updated:   2019-12-03
+title: "Setting up Storybook for React Native"
+date: 2019-12-03
+updated: 2019-12-03
 categories: react react-native typescript storybook
 slug: "react-native-storybook"
 crosspost:
   url: https://spicyseashells.com/article/react-native-storybook
   site: "Spicy Sea Shells Blog"
   hasPrefix: true
+draft: false
 ---
 
 [Storybook](https://storybook.js.org/) is a tool for documenting a design system and developing modular apps. It is popular in the web development community and I've used it in all my bigger projects. So when I transitioned from web development to working on a React Native codebase, I set up Storybook too. Here's how I did it:

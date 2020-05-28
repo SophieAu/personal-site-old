@@ -1,9 +1,10 @@
 ---
-title:	"How to Write and Use a Simple Custom Element in 5 Minutes"
-date:	2018-06-30
-updated:	2018-06-30
+title: "How to Write and Use a Simple Custom Element in 5 Minutes"
+date: 2018-06-30
+updated: 2018-06-30
 categories: web-development javascript custom-elements
 slug: "custom-elements"
+draft: false
 ---
 
 __NOTE: I have written a small sample application with vanilla JS which you can find [here](https://github.com/SophieAu/web-components-example).__ It doesn't work in Firefox or IE11 though due to missing Web Component support in those browsers.

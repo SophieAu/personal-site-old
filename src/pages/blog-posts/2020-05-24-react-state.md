@@ -4,6 +4,7 @@ date: 2020-05-24
 updated: 2020-05-24
 categories: react
 slug: "react-state"
+draft: false
 ---
 
 Unlike props, React states are very fancy and capture, as the name says, the state of the component. This state is/should be inherent to the component and not changed from the ouside directly. A nice state would e.g. be a counter.

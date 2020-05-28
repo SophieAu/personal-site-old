@@ -4,6 +4,7 @@ date: 2020-04-19
 updated: 2020-04-19
 categories: react
 slug: "hoc-renderprop-hook"
+draft: false
 ---
 
 Higher-Order Components, Render Props and Hooks are three patterns to implement state- or behaviour-sharing between components. 

@@ -4,6 +4,7 @@ date: 2020-05-31
 updated: 2020-05-31
 categories: react gatsby
 slug: "existing-gatsby-set-up"
+draft: false
 ---
 
 ## The Setup

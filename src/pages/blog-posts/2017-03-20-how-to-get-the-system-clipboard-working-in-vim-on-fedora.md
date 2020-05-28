@@ -1,9 +1,10 @@
 ---
-title:  "How to get the System Clipboard working in Vim on Fedora"
-date:   2017-03-20
-updated:   2017-03-20
+title: "How to get the System Clipboard working in Vim on Fedora"
+date: 2017-03-20
+updated: 2017-03-20
 categories: vim linux fedora ricing
 slug: "clipoard-vim-fedora"
+draft: false
 ---
 
 I finally decided to properly learn vim which also meant that was trying to get the hang of copy and paste. Including using the system clipboard. And turns out it's not as easy as it sound. Fedora for some reason only ships the `xterm_clipboard` function with gVim. But I didn't actually want the GUI. Luckily, gVim comes with a vi mode, `gvim -v`. But that's not ideal because `$vim` and my default editor still pointed to the "old" vim without the clipboard functionality.

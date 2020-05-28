@@ -4,6 +4,7 @@ date: 2020-05-10
 updated: 2020-05-10
 categories: react
 slug: "use-imperative-handle"
+draft: false
 ---
 
 Another cool hook is `useImperativeHandle`. It's one of those hooks that you should rarely use but when you managed to find a use case where you need it it's so, so nice. As the name already says `useImperativeHandle` is there to help you out with imperative code. The only use case so far that I've found is for animatable components:

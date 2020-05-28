@@ -4,6 +4,7 @@ date: 2017-12-03
 updated: 2017-12-03
 categories: empire-total-war open-source
 slug: "is-launcher-framework"
+draft: false
 ---
 
 About two years ago, I blogged about [my plans to create a launcher for my brother's Empire: Total War mod](/article/one-project-2016). And now I'm finally done. It didn't take me the whole two years (thankfully) but happend in phases. Which led to a lot of rewriting because I'd learn a lot in between the phases. Kind of annoying but actually a good thing. Because the version I released a year ago was not that great. It was working but the code base was full with dependencies, stuff happening implicitly and just not that pretty code. This has been changed with the release of the beta for version 1.0.

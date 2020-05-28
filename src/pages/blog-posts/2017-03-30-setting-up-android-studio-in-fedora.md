@@ -1,9 +1,10 @@
 ---
-title:  "Setting up Android Studio on Fedora"
-date:   2017-03-20
-updated:   2017-03-20
+title: "Setting up Android Studio on Fedora"
+date: 2017-03-20
+updated: 2017-03-20
 categories: linux fedora android android-studio 
 slug: "android-studio-fedora"
+draft: false
 ---
 
 Obviously, before installing anything, you have to [download](https://developer.android.com/studio/index.html) Android Studio. The official Android site even provides [instructions](https://developer.android.com/studio/install.html) on how to install Android Studio. Before you do anything I say, you should definitely follow them and see if it works. Chances are though, it won't.

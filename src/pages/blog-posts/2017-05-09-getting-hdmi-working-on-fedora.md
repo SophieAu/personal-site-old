@@ -1,9 +1,10 @@
 ---
-title:  "Getting HDMI audio working on Fedora"
-date:   2017-05-09
-updated:   2017-05-09
+title: "Getting HDMI audio working on Fedora"
+date: 2017-05-09
+updated: 2017-05-09
 categories: linux fedora
 slug: "hdmi-fedora"
+draft: false
 ---
 A few days ago, I wanted to stream a film on my tv. Since the tv isn't smart, I streamed on my laptop and plugged it into the tv. The video feed was no problem but the audio just didn't show up. Even a few times of turning everything off and on again wouldn't work. So in the end, I ended up on Google and this is how I got the sound to work:
 

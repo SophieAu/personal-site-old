@@ -1,9 +1,10 @@
 ---
-title:  "Adding WebP Support to your Gatsby Project"
-date:   2020-02-21
-updated:   2020-02-21
+title: "Adding WebP Support to your Gatsby Project"
+date: 2020-02-21
+updated: 2020-02-21
 categories: react gatsby javascript
 slug: "gatsby-webp"
+draft: false
 ---
 
 WebP is a (relatively) new image format that (in most cases) allows you to ship smaller image files without a quality loss. Also, [Lighthouse](https://developers.google.com/web/tools/lighthouse) really likes them and gives you bonus points for using them. Which let's be honest is the main reason I set all this up.
