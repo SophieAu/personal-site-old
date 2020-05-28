@@ -16,10 +16,12 @@ export const query = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
             date(formatString: "YYYY-MM-DD")
-            slug
           }
         }
       }
@@ -46,7 +48,7 @@ const BlogSection: React.FC<{ posts: Post[] }> = ({ posts }) => (
     <ul className="post-list">
       {posts.map(({ node }) => (
         <li key={node.id}>
-          <a href={`${paths.articleBase}/${node.frontmatter.slug}`}>
+          <a href={`${paths.articleBase}${node.fields.slug}`}>
             <span className="post-date">{`${node.frontmatter.date} `}</span>
             {node.frontmatter.title}
           </a>

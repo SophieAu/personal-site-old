@@ -11,12 +11,14 @@ import { SingleGraphQLResponse } from '../types';
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "DD MMMM YYYY")
-        slug
         crosspost {
           site
           url
@@ -32,7 +34,7 @@ const Post: React.FC<SingleGraphQLResponse> = ({ data: { markdownRemark: post } 
     <SEO
       title={string.pageTitle({ title: post.frontmatter.title })}
       description={string.pageDescription({ title: post.frontmatter.title })}
-      slug={post.frontmatter.slug}
+      slug={post.fields.slug}
     />
     <article id="article">
       <h1>{post.frontmatter.title}</h1>

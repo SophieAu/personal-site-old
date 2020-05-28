@@ -7,8 +7,10 @@ const QUERY = `{
     edges {
       node {
         frontmatter {
-          slug
           draft
+        }
+        fields {
+          slug
         }
       }
     }
@@ -21,12 +23,12 @@ exports.createPages = async ({ graphql, actions }) => {
   if (errors) return;
 
   const component = path.resolve(`./src/templates/post.tsx`);
-  const pageData = slug => ({ path: `article/${slug}`, component, context: { slug } });
+  const pageData = slug => ({ path: `article${slug}`, component, context: { slug } });
 
   data.allMarkdownRemark.edges.forEach(({ node }) => {
     if (node.frontmatter.draft) return;
 
-    actions.createPage(pageData(node.frontmatter.slug));
+    actions.createPage(pageData(node.fields.slug));
   });
 };
 

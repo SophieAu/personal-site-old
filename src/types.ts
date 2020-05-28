@@ -5,6 +5,7 @@ export type Post = {
   node: {
     id: number;
     frontmatter: PostFrontmatter;
+    fields: { slug: string };
     excerpt: string;
   };
 };
@@ -21,6 +22,7 @@ export type SingleGraphQLResponse = {
   data: {
     markdownRemark: {
       html: string;
+      fields: { slug: string };
       frontmatter: PostFrontmatter;
     };
   };
@@ -29,7 +31,6 @@ export type SingleGraphQLResponse = {
 type PostFrontmatter = {
   title: string;
   date: string;
-  slug: string;
   crosspost?: Crosspost;
 };
 
