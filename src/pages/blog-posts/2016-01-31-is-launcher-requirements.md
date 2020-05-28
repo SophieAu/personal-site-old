@@ -1,17 +1,18 @@
 ---
-title:  "Imperial Splendour Launcher - The Requirements"
-date:   2016-01-31
-updated:   2016-01-31
+title: "Imperial Splendour Launcher - The Requirements"
+date: 2016-01-31
+updated: 2016-01-31
 categories: empire-total-war
 slug: "is-launcher-requirements"
+draft: false
 ---
 
 After discussing my over-all plan for the Launcher [last month](/article/one-project-2016), I'll go into detail about the requirements and how I want to meet them today.
 
 They are more or less the same as the ones outlined in my intro post.
 
-1. Move Files: to move the modding files into the Empire: Total War folder (it “installs” the mod)
-2. Remove Files: to move the modding files out of the Empire: Total War folder (it uninstalls the mod)
+1. Move Files: to move the modding files into the Empire: Total War folder (it "installs" the mod)
+2. Remove Files: to move the modding files out of the Empire: Total War folder (it "uninstalls" the mod)
 3. Start Imperial Splendour: A link to the Empire: Total War launcher (to start the game)
 
 First, to understand why I'm doing what I'm doing a bit of background on the mod. As in, how it works: In order for the mod to work, you have to put the files for the mod into a certain folder. If you now open the regular Empire Total War launcher, the mod will be started. But of course people might want to switch between the regular game and Imperial Splendour. And that's where I come in.
@@ -23,7 +24,7 @@ The Launcher (at least in version 1.0) is supposed to look like this:
 
 ![My brother's design for the launcher](/img/is-launcher-mockup.png)
 
-##GENERAL
+## GENERAL
 Every time a path or file cannot be found, throw an exception and open a dialog so that the user can search for the file/folder themselves. If they choose cancel, undo everything
 
 ## ON FIRST STARTUP

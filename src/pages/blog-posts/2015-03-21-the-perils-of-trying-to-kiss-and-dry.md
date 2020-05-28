@@ -1,9 +1,10 @@
 ---
-title:  "The Perils of Trying to KISS and DRY"
-date:   2015-03-21
-updated:   2015-03-21
+title: "The Perils of Trying to KISS and DRY"
+date: 2015-03-21
+updated: 2015-05-28
 categories: java coding
 slug: "kiss-and-dry"
+draft: false
 ---
 Last week in my programming class we had to write a function that returns the next day. That in itself wasn’t difficult. But when I tried to simplify my code I got stuck in a rut.
 
@@ -29,7 +30,7 @@ public void setTomorrow() {
         day = 1;
         if (month == 12) {
             month = 1;
-            jahr = jahr + 1;
+            year = year + 1;
         } else {
             month = month + 1;
         }
@@ -43,7 +44,7 @@ It works just fine, but I didn’t like it. The `lastDay` variable isn’t very 
 
 ```java
 public void setTomorrow() {
-    if (month == 2 && ((day == 28 && !istSchaltjahr()) || (day == 29))) {
+    if (month == 2 && ((day == 28 && !isLeapYear()) || (day == 29))) {
         day = 1;
         month += 1;
     } else if ((day == 30 && ((month % 2 == 0 && month <= 6) || (month % 2 == 1 && month > 7)))) {
@@ -57,7 +58,7 @@ public void setTomorrow() {
     }
     if (month == 13) {
         month = 1;
-        jahr += 1;
+        year += 1;
     }
 }
 ```
@@ -68,7 +69,7 @@ The first idea was to extract the update statement in the if-statements.
 
 ```java
 public void setTomorrow() {
-    if (month == 2 && ((day == 28 && !istSchaltjahr()) || (day == 29))) {
+    if (month == 2 && ((day == 28 && !isLeapYear()) || (day == 29))) {
         resetMonth();
     } else if ((day == 30 && ((month % 2 == 0 && month <= 6) || (month % 2 == 1 && month > 7)))) {
         resetMonth();
@@ -79,7 +80,7 @@ public void setTomorrow() {
     }
     if (month == 13) {
         month = 1;
-        jahr += 1;
+        year += 1;
     }
 }
  
@@ -101,12 +102,12 @@ public void setTomorrow() {
     }
     if (month == 13) {
         month = 1;
-        jahr += 1;
+        year += 1;
     }
 }
  
 public boolean endOfMonth() {
-    if (month == 2 && ((day == 28 && !istSchaltjahr()) || (day == 29))) {
+    if (month == 2 && ((day == 28 && !isLeapYear()) || (day == 29))) {
         return true;
     }
     if ((day == 30 && ((month % 2 == 0 && month <= 6) || (month % 2 == 1 && month > 7)))) {
