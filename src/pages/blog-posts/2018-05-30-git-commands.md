@@ -27,7 +27,6 @@ If you've identified which files you want to track you need to add it to the rep
 If you've accidentally staged a file the above command unstages it without deleting the changes though.
 
 ## 6) `git commit`
-
 Now that you've staged all the files and hunks you want you can finally create a commit. This is pretty straightforward. All staged files will be added to the commit which is then saved and (for our intents and purposes) immutable. So be careful! You can change commits afterwards but you really shouldn't.
 
 You can (and should) add a message to each commit to explain what this commit actually changes. Make sure that the message is not just
