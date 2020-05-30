@@ -68,3 +68,14 @@ If you've come to the conclusion that your image isn't just purely decorative yo
 ## Additional Considerations
 
 Another thing that comes into play when you have images that aren't purely decorative is that those images need to be accessible just like the rest of your website. That means having well-sized text, high contrast and well-contrasting colors amongst others.
+
+## 🔥 Hot Tip: Make missing alt text visible
+
+When you're developing it can be hard to keep track of where you've set alt text and where it's still missing. One simple way to detect it is by changing the styling of images with missing alt text:
+
+```css
+img:not([alt]) {
+  filter: blur(5px);
+  border: 5px solid red;
+}
+```
