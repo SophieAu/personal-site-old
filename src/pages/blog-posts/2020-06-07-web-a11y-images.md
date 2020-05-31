@@ -33,7 +33,7 @@ Not every image needs alt (alternative) text. But most probably do. Here's a flo
 
 Not every image is conveying information. When you go onto any blog on the web, chances are that the author has added a hero image to their blog post. While those images are generally speaking nice to look at they quite often don't actually add any value to the post itself. Take e.g. [Kent C. Dodds' website](https://kentcdodds.com/). All of his posts have a nice hero image but those images don't actually add any value to the content of the post. If you left out the image absolutely zero information would be lost.
 
-![](./img/web-a11y-img_kent.png)
+![Blogpost by Kent C Dodds with purely decorative hero image](./img/web-a11y-img_kent.png)
 
 Images like that don't need an alt text and I'd even argue that those images shouldn't have an alt text at all. But! Don't omit the `alt` prop completely. Instead set it to `alt=""`. That way you
 
@@ -50,7 +50,7 @@ Sometimes an image is only/mostly decorative but it's 'hiding' important functio
 
 Take for example the Twitter icon on the top left of the twitter page. The icon itself doesn't add too much extra info for the user. It does however represent a link that's gonna take you back to the homepage. What you want to do in this case is set the `title` attribute on the `a` (link) element and set the alt-text to `""`.
 
-![](./img/web-a11y-img_twitter.png)
+![Twitter homepage with icon-only link to homepage in the corner](./img/web-a11y-img_twitter.png)
 
 
 Now, imagine yourself explaining the image to a friend who can't see it (which is kinda what a screen reader does). You wouldn't tell them "there's a twitter logo" and then leave it at that. You'd probably say something along the lines of "when you click the twitter logo, it redirects you back to the home page." And that's what you should write into the alt text.
