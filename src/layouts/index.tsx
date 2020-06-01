@@ -7,7 +7,7 @@ import SEO from '../components/SEO';
 import { meta } from '../strings';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <>
+  <React.StrictMode>
     <SEO title={meta.name} description={meta.siteDescription} slug="" />
     <div id="root">
       <Header />
@@ -15,7 +15,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
       <main>{children}</main>
       <Footer />
     </div>
-  </>
+  </React.StrictMode>
 );
 
 export default Layout;
