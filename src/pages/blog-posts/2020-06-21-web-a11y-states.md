@@ -11,7 +11,7 @@ draft: false
 
 The focus state is what you see when a user 'tabs' through a page. Elements that are focusable are everything that has an (implicit) [tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex). Elements with implicit tabindex are e.g. links (`<a>`), buttons (`<button>`) and inputs (`<input>`).
 
-Try t yourself and tab through [dev.to](https://dev.to/). You can always see which element is currently selected. And that is because the `:focus` state is set, in most cases simply with the default style.
+Try it yourself and tab through [dev.to](https://dev.to/). You can always see which element is currently selected. And that is because the `:focus` state is set, in most cases simply with the default style.
 
 NEVER DO THIS:
 
@@ -40,11 +40,11 @@ What you're doing here is hiding any indication of where the user is when they'r
 
 <button class="focus">With Focus</button>
 <label class="visually-hidden" for="focus-input">Example Input with Focus:</label>
-<input id="focus-input" class="focus" placeholder="With Focus" type="text"/>
+<input id="focus-input" class="focus" value="With Focus" type="text"/>
 
 <button class="non-focus">Without Focus</button>
 <label class="visually-hidden" for="non-focus-input">Example Input without Focus:</label>
-<input id="non-focus-input" class="non-focus" placeholder="Without Focus" type="text"/>
+<input id="non-focus-input" class="non-focus" value="Without Focus" type="text"/>
 <style>
   .non-focus:focus { outline: none;}
 </style>
@@ -53,7 +53,7 @@ Now, I'm not saying you should never remove the `outline` style. It's totally le
 
 <button class="custom-focus">Custom Focus</button>
 <label class="visually-hidden" for="custom-focus-input">Example Input with Custom Focus:</label>
-<input class="custom-focus" id="custom-focus-input" placeholder="Custom Focus" type="text"/>
+<input class="custom-focus" id="custom-focus-input" value="Custom Focus" type="text"/>
 <style>
   .custom-focus:focus {
     outline: none;
@@ -76,10 +76,10 @@ Just make sure that the focus state is very different from the 'normal' state si
 Focus-within is kind of an extension of the focus state. Like the name says it is triggered when a descendant (child-element) gets focus:
 
 <div class="wrapper">
-    <button class="custom-focus">Custom Focus</button>
+    <button class="fpcus-within-btn">Focus Within Button</button>
 </div>
 <style>
-  .custom-focus:focus {
+  .fpcus-within-btn:focus {
     outline: none;
     background-color: lightgreen;
   }
@@ -90,29 +90,39 @@ Focus-within is kind of an extension of the focus state. Like the name says it i
 </style>
 
 
-
-
-
 ## :focus-visible
----
+
+focus-visible is a nice but very new and [barely-supported](https://caniuse.com/#feat=mdn-css_selectors_focus-visible) pseudo class. It is only set when an element was focus using the keyboard. When you focused an element by clicking on it with a mouse the styles are not applied.
+
+<button class="focus-visible">Focus Visible</button>
+<style>
+  .focus-visible:-moz-focusring {
+    outline: none;
+    background-color: lightgreen;
+  }
+  .focus-visible:focus-visible {
+    outline: none;
+    background-color: lightgreen;
+  }
+</style>
 
 
-What you need to care about:
-* :focus-visible is a nice new pseudo-class that's only supported in firefox (so far). It only sets when the element has been focused with a keyboard, not with the mouse
+While `focus-visible` isn't very supported at the moment, there is a a nice little helper to only style the outline of 'mouse-focussed' elements that falls back to default styling.
 
 ```css
-:focus:not(:focus-visible) {
-    outline:none;
+:focus:not(:focus-visible),
+:focus:not(:-moz-focusring) {
+    outline: red solid 1px; 
 }
 ```
-get rids of the focus outline for mouse users but preserves it for keyboard users and anyone with a browser that doesn't support `:focus-visible`
+ So, on 'mouse-focus' the element will have a red outline while on 'keyboard-focus' and if `focus-visible` isn't supported, the elemnt will have the default browser outline.
 
 
 ## :hover
 
-The hover state is probably the most well-known 'interative state' It helps the user to be aware of where they are and that the element they're on at the moment is interactive.
+The hover state is probably the most well-known 'interative state'. It is the state you see when you hover (i.e. position your mouse without clicking) over an element. It makes the user aware taht the element they're on is interactive. Since a user is generally aware of where they are, the hover state can be a bit more subtle than e.g. the focus state.
 
-<a class="hover">With Hover</a>
+<a class="hover">Link with Hover</a>
 <style>
   #article .hover:hover {
     text-decoration: none;
@@ -120,18 +130,17 @@ The hover state is probably the most well-known 'interative state' It helps the 
   }
 </style>
 
-<a class="non-hover">Without Hover</a>
-
-
-hover can be a bit more subtle since the user is generally aware of where they'r hovering at the moment
-
+<a class="non-hover">Link without Hover</a>
 
 
 ## :active
 
-riggers when you interact with an element. Interacting here means:
+The active state is one you usually barely notice but it's still important to be set. You'll see it when you're currently clicking on an element and when you're holding doen the 'space' key on a button. So essentially you'll see it when the element is currently 'active', as the name says.
 
-    Holding down your left mouse button on an element (even non-focusable ones)
-    Holding down the Space key (on buttons)
+Since it is rarely seen and is only triggered when the user is either hovering over or focussed on an element, the styling can be a bit more subdued, potentially even more so than for the hover state.
 
-
+<button class="default-active">Default Active</button>
+<button class="custom-active">Custom Active</button>
+<style>
+  .custom-active:active { background-color: lightgreen;}
+</style>
