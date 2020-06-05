@@ -52,7 +52,7 @@ If you want to use webP images outside of the Gatsby ecosystem the setup is a bi
 ### 1) Converting your images to WebP
 
 Google's Developer Page offers a [precompiled tool](https://developers.google.com/speed/webp/docs/precompiled) that lets you convert e.g. png to webp files with this simple command:
-```sh
+```
 cwebp -q [QUALITY E.G. 90]  input.png -o output.webp
 ```
 
