@@ -2,7 +2,7 @@
 title: "Accessibility on the Web: Images"
 date: 2020-06-07
 updated: 2020-06-07
-categories: javascript web-dev a11y
+categories: web-dev a11y
 slug: "web-a11y-images"
 draft: false
 ---
