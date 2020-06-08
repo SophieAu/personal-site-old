@@ -1,5 +1,5 @@
 ---
-title: "Accessibility on the Web: TBDDDDDDDDDDDDD!!!!!!!!!!!!!!!!!!!!!!!!"
+title: "Accessibility on the Web: Enhance"
 date: 2020-07-05
 updated: 2020-07-05
 categories: javascript web-dev a11y
@@ -7,25 +7,13 @@ slug: "web-a11y-enhance"
 draft: true
 ---
 
-The best aria is no aria at all
+Generally you do not want to add extra bells and whistles to your website just for screen reader users. It's generally a sign that the website doesn't work for sighted users either. Also, there are users who are using a screen reader while looking at the screen (e.g. people with reading disabilities, vision-impaired users). Adding extra-content for the screen reader that the user cannot see would just be very confusing. There are howeer a few excptions to the rule:
 
 
+## Skip to Content Button
+If you have a meaty header and/or long nav list it might be a good idea to add a 'skip to content' button that is only 'visible' to screen readers. This allows, as the name says, screen reader users to go straight to the content, skipping headers, nav and whatever you specify. You should make this button visible on focus though as to not confuse sighted users who are tabbing through your page.
+
+To have the button keyboard-accessible but not visible, use [this visually-hidden css class](https://github.com/SophieAu/util/blob/master/css/visually-hdden.css).
 
 
-
-
-# POST: Know how to hide things inclusively / enhance site for screen readers
-
-Only use display: none or hidden if you want noone to see the thing. in other cases use the 'visually-hidden helper class that you can find everywhere. But if you want to hide something that's interactive, first of all: Why? Second: figure out how to comunicate to the user that they have 'selected' something'
-
-## 12. Skip to content button
-and in general allow people to skip to stuff using semantic html landmarks (e.g. nav, header, main, footer)
-
-## 13. people might use the screen reader and look at the screen
-Don't make the screen reader read something other than what's on the screen. it confuses the heck out of people
-
-
-
-
-# POST: make sure that dynamic content is somehow announced to the user
-
+## Announce Dynamic Content
