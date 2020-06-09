@@ -7,17 +7,25 @@ slug: "web-a11y-keyboard"
 draft: true
 ---
 
-The best aria is no aria at all
+Testing your website for keyboard navigation is actually a comparatively simple and quick win. You might even do it already, tabbing through forms to get from one field to the next. Screen readers go through your site the same way as keyboards (and generally speaking screen reader users will be using a keyboard to navigate your site) which means that if you can't reach something with your keyboard neither will a screen reader. 
+
+In most browsers, it should work out of the box. Just go to any website and start tabbing through them. One more complec site, that I think is doing a good job [dev.to](https://dev.to/). Just tab through and see how they make sure that you always know where you are. And everything that looks interactive is reachable and usable with the keyboard too.
+
+In most cases, using [semantic html](/articles/web-a11y-semantic) will do all the heavy lifting for you so you only need to worry about edge cases.
 
 
+## Making an element keyboard accessible
+
+There are very few cases where you need to manually add an element to the 'taborder'. In most cases, simply using semantic elements such as `button` and `a` should be enough. But sometimes there are weird edge cases where you want to manually make an element interactive in which case, you can add `tabindex=0` to an element. This way it will be added to the taborder according to its position in the DOM.
+
+<div tabindex=0>I can be focused</div>
 
 
-# POST: traverse your website with keyboard only
-* all screen readers hook into your site the same way as the keyboard -> if you can't navigate your page using your keyboard neither can a screen reader.
-* don't set autofocus (don't use unless you have a good reason)
+## Respecting the visual order
 
-## 11.2 ensure everything interactive is keyboard-accessible
+Despite everything that CSS can do for you, don't go overboard with the positioning. You'll want to keep the visual order in sync with the DOM order. Which includes trying to avoid `flex-direction: row-reverse` or `flex-direction: column-reverse`. And similar such shenanigans with CSS Grid. Flex and Grid are really cool toys but can also be misused easily.
 
-## 11.3 visual order and dom order should alawys match.
 
-if you need to use e.g. flex row=reverse set the tabindex properly. but ideally, don't use the 'reverse' value at all. it was a shitty move to even add it to the spec.
+## Avoiding forced focus
+
+Try to avoid auto-focusing elements. Especially on page-load. You want to give a user the chance to figure out where they are before being asked to e.g. put in their email into a form.
