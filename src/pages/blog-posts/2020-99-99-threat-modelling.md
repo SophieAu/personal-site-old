@@ -175,6 +175,14 @@ Review the threat model and make sure everything works as advertised
 
 
 
+---
+## Threat Model Every Story
+
+Every story you work on, ask yourself if it has security implications.  Only skip the threat modeling if you're 100% sure taht there's no security impklications 
+
+Have a TM Curator who's responsible for threat modeling.
+
+If there was something, let the 'TM Curator' know and add it to the threat model. Also: Fix it! -> Add it into the model with a note how it has been fixed (mitigated).
 
 
 
