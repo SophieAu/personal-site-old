@@ -41,11 +41,13 @@ You will want to figure out the following:
 
 
 
-## Threat Modeling a Feaure
+## Threat Modeling a Feature or Story
 
 This is where the actual threat modeling comes in. With all the prerequisites out of the way, you can now focus on finding the vulnerabilities in your system.
 
-You can do threat modeling for the system as a whole but generally speaking it is easier (and less daunting) to do it on a feature by feature bases, ideally even during feature breakdowns in the product development lifecycle. The following will assume that you're doing threat modeling for a specific feature.
+You should be doing threat modeling on a feature and story basis. If you're looking to introduce threat modeling to an existing system, check the paragraph below.
+
+Ideally, you will be doing the threat modeling once during feature breakdowns in the product development lifecycle in a grand scope and then again, in smaller scope for each story that is worked on. While the threat modeling for a feature should include everyone in the team that has a vested interest in the feature (developers, managers, designers, stakeholders), the threat modeling for a story can include only the developer working on it with, optionally, the help of your security specialist.
 
 ### Building a Data Flow Diagram
 
@@ -124,8 +126,6 @@ Many vulenariblities can be mitigated by properly set trust and privilege bounda
 On these boundaries you would usually do monitoring, logging, sanitization and similar.
 
 
-
----- 
 
 ## Sources
 
