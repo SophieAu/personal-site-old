@@ -82,7 +82,10 @@ I want to OUTCOME
 By EXPLOIT
 To ASSET
 Because MOTIVATIOM
+Which leads to CONSEQUENCE
 
+
+Consequence: What's the actual effect on the company? Bad PR if it leaks, money gone, ...
 
 
 
@@ -187,11 +190,89 @@ If there was something, let the 'TM Curator' know and add it to the threat model
 
 
 
+---
+## FOWLER POST (It'S A LONG ONE)
+
+when developing on a sory, focus on techncla threats such as encryption, auth, ... Focus on threat sources only when looking at the grand scheme of things. e.g. epic breakdown or something
+
+### Workshopping
+
+#### To start
+
+Ask 3 questions:
+
+|Activity               |Question                   |Outcome                            |
+|-----------------------|---------------------------|-----------------------------------|
+|Explain and explore    |What are you building?     |A technical diagram                |
+|Brainstorm threats     |What can go wrong?         |A list of technical threats        |
+|Prioritise and fix     |What are you going to do?  |Priorised fixes added to backlog   |
 
 
+Do these sessions for every epic. Involve the whole team (that's gonna be working on this) and take max. 90 minutes.
+
+
+Don't forget to talk about the 'meta' stuff as well: CI/CD, machines, ...
+
+
+
+
+#### Explain and Explore
+
+Draw a lofi diagram of what's gonna be built. including data flows. The diagram should contain: software components (backend microservice, frontend pages, auth provider, api layer, db, ...) and users (where's the entry point). Don't get to detailed yet.
+
+Show Data flow by drawing arrows. Also label networks and draw boundaries (e.g. 'the internet' to serverside).
+
+Mark your assets (which could be e.g. user credentials, user data, bank account access keys)
+
+
+#### Brainstrm threats
+
+Based on the diagram, use STRIDE to identify threats. There's no wrong answer! Don't dicourage people. The threat can be as outrageous and unrealistic as possible. It still counts. Most threats will probably happen at the data flow lines, where components are opened up for communications.
+
+Add stickies with threats to the attack point in the diagram.
+
+
+
+#### Prioritise and Fix
+
+Go through all the threats you identified and figure out which ones are the most pressing ones. Focus on getting those done asap. Do copy down all threats though, maybe in a database of some sort. 
+
+Take a pic of the annotated diagram too. Or find a different way to archive the findings.
+
+Don't forget to add ALL important threats to te backlog and get them fixed!
+
+
+---
+
+Ranking Threats:
+
+Dmage
+Reproducibility
+Expolitability
+Affected Users
+Discoverability
+
+
+---
+
+
+STRIDE Countermeasures
+Every threat from STRIDE has a countermeasure.
+1. Authentication (for Spoofing) — Establishing a verifiable identity.
+2. Data protection (for Tempering with data) — Maintaining data and ensuring consistency of data and methods that work on data.
+3. Confirmation (for Reputation) — Every action against the application must be logged.
+4. Confidentiality ( for Information disclosure) — Restricting access to system and data.
+5. Availability(for Dos) — Leverage levels of redundancies.
+6. Authorization (for Elevation of privileges) — Limiting access to data, actions and services.
 
 
 ---- 
 
 Sources:
 Felix Hammerl's excellent [blog post series on Rational Security](https://felixhammerl.com/2018/05/03/Sec-1-Introduction-to-Rational-Security.html)
+
+
+Resources:
+Adam Shostack's [Conflict Modeling](https://github.com/adamshostack/conflictmodeling) which tackles social/reputation threat modeling -> How can our software be used for evil.
+
+This [Awesome Threat Modeling list](https://github.com/hysnsec/awesome-threat-modelling) on GitHub
