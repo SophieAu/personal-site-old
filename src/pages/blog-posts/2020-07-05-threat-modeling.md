@@ -127,11 +127,12 @@ On these boundaries you would usually do monitoring, logging, sanitization and s
 
 ---- 
 
-## Sources:
+## Sources
 
 * Felix Hammerl's excellent [blog post series on Rational Security](https://felixhammerl.com/2018/05/03/Sec-1-Introduction-to-Rational-Security.html)
-* Adam Shostack's talk on [Threat Modeling in 2019]()
+* Adam Shostack's talk on [Threat Modeling in 2019](https://www.youtube.com/watch?v=ZoxHIpzaZ6U)
 
-## Resources:
+## Resources
+
 * Adam Shostack's [Conflict Modeling](https://github.com/adamshostack/conflictmodeling) which tackles social/reputation threat modeling -> How can our software be used for evil.
 * This [Awesome Threat Modeling list](https://github.com/hysnsec/awesome-threat-modelling) on GitHub
