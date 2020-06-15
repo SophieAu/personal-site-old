@@ -19,11 +19,9 @@ In most cases you will be talking about digital data though, things like users' 
 
 These things can be threatened in 3 major ways:
 
-**Confidentiality**: The data is not shared with unintended 3rd parties, even in its encrypted form
-
-**Integrity**: The data is kept accurately and authentic, meaning it is only generated, changed and managed by authorized sources.
-
-**Availability**: The data is available and usable to authorized sources when needed.
+* **Confidentiality**: The data is not shared with unintended 3rd parties, even in its encrypted form
+* **Integrity**: The data is kept accurately and authentic, meaning it is only generated, changed and managed by authorized sources.
+* **Availability**: The data is available and usable to authorized sources when needed.
 
 
 ### Threat Actors
