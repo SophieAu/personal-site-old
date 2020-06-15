@@ -106,7 +106,7 @@ As an ACTOR
 I want to OUTCOME  
 By EXPLOIT  
 To ASSET  
-Because MOTIVATIOM  
+Because MOTIVATION  
 Which leads to IMPACT  
 
 The Impact is the actual effect on the company? Is it bad press? Competitors gaining an advantage? ...?
