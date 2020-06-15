@@ -1,10 +1,10 @@
 ---
 title: "Threat Modeling"
-date: 2020-07-05
-updated: 2020-07-05
+date: 2020-06-14
+updated: 2020-06-14
 categories: security
 slug: "threat-modeling"
-draft: true
+draft: false
 ---
 
 The goal of Threat Modeling is to figure out the vulnerabilities in your system and, if needed, plan to fix them. You'll very likely never find all potential threats but this exercise (done regularly) should help you over most of them. As with (almost) everything, awareness is key.
