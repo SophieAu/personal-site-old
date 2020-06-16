@@ -120,7 +120,7 @@ While `focus-visible` isn't very supported at the moment, there is a a nice litt
 
 ## :hover
 
-The hover state is probably the most well-known 'interative state'. It is the state you see when you hover (i.e. position your mouse without clicking) over an element. It makes the user aware taht the element they're on is interactive. Since a user is generally aware of where they are, the hover state can be a bit more subtle than e.g. the focus state.
+The hover state is probably the most well-known 'interative state'. It is the state you see when you hover (i.e. position your mouse without clicking) over an element. It makes the user aware that the element they're on is interactive. Since a user is generally aware of where they are, the hover state can be a bit more subtle than e.g. the focus state.
 
 <a class="hover">Link with Hover</a>
 <style>
