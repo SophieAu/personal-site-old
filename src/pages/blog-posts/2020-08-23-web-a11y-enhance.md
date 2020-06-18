@@ -16,4 +16,31 @@ If you have a meaty header and/or long nav list it might be a good idea to add a
 To have the button keyboard-accessible but not visible, use [this visually-hidden css class](https://github.com/SophieAu/util/blob/master/css/visually-hdden.css).
 
 
+
+
+<a class="screen-reader-shortcut" href="#main-content">
+  Skip to main content
+</a>
+
+The ‘Skip to main content’ link has limited use to sighted users, who can already skip the navigation by using their eyes. So, whilst some sites keep the skip link visible at all times, the convention nowadays is to keep the link hidden until you tab into it, at which point it is in focus and gains the styling applied by the :focus pseudo selector.
+
+.screen-reader-shortcut {
+  position: absolute;
+  top: -1000em;
+}
+
+.screen-reader-shortcut:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* ...and now any nice styling you want to apply... */
+  padding: 1em;
+  background-color: rgb(114, 105, 105);
+  color: white;
+  text-decoration: none;
+}
+
+
+
 ## Announce Dynamic Content
