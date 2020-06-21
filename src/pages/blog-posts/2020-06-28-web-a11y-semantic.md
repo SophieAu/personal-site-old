@@ -1,7 +1,7 @@
 ---
 title: "Accessibility on the Web: Semantic HTML"
-date: 2020-06-28
-updated: 2020-06-28
+date: 2020-06-06
+updated: 2020-06-06
 categories: javascript web-dev a11y
 slug: "web-a11y-semantic"
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: "Accessibility on the Web: Focus, Hover and Active States"
-date: 2020-06-21
+date: 2020-06-05
 updated: 2020-06-21
 categories: web-dev a11y
 slug: "web-a11y-states"
