@@ -7,7 +7,12 @@ slug: "web-a11y-animation"
 draft: true
 ---
 
-The best aria is no aria at all
+* reduced motion
 
-# POST: ANIMATION / MOVEMENT
 
+* svg
+
+* images
+
+
+-> make it one post together with the image post
