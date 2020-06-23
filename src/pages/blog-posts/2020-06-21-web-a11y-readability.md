@@ -59,7 +59,7 @@ Also make sure to keep the line length at around 60 - 70 characters for 'normal'
 ## Content Readability
 
 
-## #Language Level
+### Language Level
 
 Which language level you should use depends heavily on your target group. If you have a landing page for a run-of-the-mill mobile app you'll probably want to stick to a reading level around Middle School (which is kids around 14). If you target philosophy majors you can of course go with a higher level. Always keep in mind though that not everyone who's reading your text is going to be fluent in English. So try to make yourself understood with 'simple' words and short, to the point sentences. Also try to [avoid using condescending words and phrases](https://css-tricks.com/words-avoid-educational-writing/) such as 'basically, 'only', 'it's really easy'. It might not be tht simple for your reader and could make them feel stupid.
 
