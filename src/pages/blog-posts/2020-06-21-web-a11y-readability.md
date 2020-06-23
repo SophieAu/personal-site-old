@@ -1,13 +1,15 @@
 ---
-title: "Accessibility on the Web: Visual Readability"
+title: "Accessibility on the Web: Readability"
 date: 2020-06-21
-updated: 2020-06-21
+updated: 2020-06-23
 categories: javascript web-dev a11y
 slug: "web-a11y-readability"
 draft: false
 ---
 
-## Color Contrast
+## Visual Readability
+
+### Color Contrast
 
 The W3C has released [guidelines on color contrast](https://www.w3.org/TR/WCAG21/%23contrast-minimum). But they're not the easiest read and having to recalculate them everytime you want to use two colors is a bit much. Luckily there's a bunch of tools to help you out. You can find a few of them below in the Resources section.
 
@@ -20,7 +22,7 @@ The general rules are:
 |> 4.5:1    | All other text (including text in images)                 |
 
 
-## Fonts Size and Zoom
+### Fonts Size and Zoom
 
 There are no hard and fast rules on font sizing but what's generally considered acceptable is:
 
@@ -54,6 +56,25 @@ You'll also want to avoid block text-alignment since that changes the letter and
 Also make sure to keep the line length at around 60 - 70 characters for 'normal' body text to avoid the user getting lost trying to find the start of the next line and break up your text into paragraphs.
 
 
+## Content Readability
+
+
+## #Language Level
+
+Which language level you should use depends heavily on your target group. If you have a landing page for a run-of-the-mill mobile app you'll probably want to stick to a reading level around Middle School (which is kids around 14). If you target philosophy majors you can of course go with a higher level. Always keep in mind though that not everyone who's reading your text is going to be fluent in English. So try to make yourself understood with 'simple' words and short, to the point sentences. Also try to [avoid using condescending words and phrases](https://css-tricks.com/words-avoid-educational-writing/) such as 'basically, 'only', 'it's really easy'. It might not be tht simple for your reader and could make them feel stupid.
+
+Try to stay away from abbreviations and jargon too unless you explained it first. I know what OOP is, but again, your readers might not. It stands for [object oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) by the way.
+
+
+### Default Language
+
+If you offer your site in multiple languages, do not use the user's location to decide on which language to use. Just because I'm on vacation in Spain doesn't mean I'm suddenly fluent in Spanish. Instead, use what they set in the settings. This is the snippet I tend to use:
+
+```js
+navigator.languages
+    ? navigator.languages[0]
+    : navigator.language || navigator.userLanguage || "en";
+```
 
 ## Resources
 
@@ -64,3 +85,5 @@ Also make sure to keep the line length at around 60 - 70 characters for 'normal'
 
 * [Contrast](https://usecontrast.com/) and [Contraste](https://contrasteapp.com/): Mac menu bar apps to check WCAG color contrast ratios
 * [Stark](https://www.getstark.co/): A plugin for your favourite design tool (Figma, Sketch, Adobe XD)
+
+* [Hemingway](https://hemingwayapp.com/): An online editor that checks your writing and highlights opportunities for improvement.
