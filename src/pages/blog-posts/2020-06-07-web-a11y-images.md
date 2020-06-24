@@ -80,3 +80,26 @@ img:not([alt]) {
   border: 5px solid red;
 }
 ```
+
+
+## Animations and Reduced Motion
+
+Animations have always been cool and practically everyone wants them on their landing pages. But to some people these things aren't pretty toys but can actually cause pian raging from nausea to migraine attacks to potentially even seizures. I myself love them (Animations) most of the time but when I'm in the middle of a migraine attack I will feel the urge to go and murder the poor developer of whatever website with animation I happened to land on.
+
+Luckily, you can help these users by using the [`prefers-reduced-motion` media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion). Usually, users will turn on reduced motion in their OS settings which will then be passed on to the browser (well, [except IE11 of course](https://caniuse.com/#feat=prefers-reduced-motion)). `prefers-reduced-motion` has two valid values: `reduced` and `no-motion`. To catch as many users as possible, you should wrap your animations in a media query, making the non-animated styling the default like so:
+
+```css
+.fancy-thing {
+  opacity: 0.8;
+}
+
+.fancy-thing:focus {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fancy-thing {
+    transition: opacity 500ms;
+  }
+}
+```
