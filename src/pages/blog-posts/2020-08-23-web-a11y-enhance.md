@@ -1,7 +1,7 @@
 ---
 title: "Accessibility on the Web: Enhance"
-date: 2020-08-23
-updated: 2020-08-23
+date: 2020-99-99
+updated: 2020-99-99
 categories: javascript web-dev a11y
 slug: "web-a11y-enhance"
 draft: true
