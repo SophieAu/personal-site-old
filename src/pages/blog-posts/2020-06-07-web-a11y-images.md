@@ -84,7 +84,7 @@ img:not([alt]) {
 
 ## Animations and Reduced Motion
 
-Animations have always been cool and practically everyone wants them on their landing pages. But to some people these things aren't pretty toys but can actually cause pian raging from nausea to migraine attacks to potentially even seizures. I myself love them (Animations) most of the time but when I'm in the middle of a migraine attack I will feel the urge to go and murder the poor developer of whatever website with animation I happened to land on.
+Animations have always been cool and practically everyone wants them on their landing pages. But to some people these things aren't pretty toys but can actually cause pian raging from nausea to migraine attacks to potentially even seizures. I myself love them (animations) as much as the next person but when I'm in the middle of a migraine attack I will feel the urge to go and murder the poor developer of whatever website with animation I happened to land on.
 
 Luckily, you can help these users by using the [`prefers-reduced-motion` media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion). Usually, users will turn on reduced motion in their OS settings which will then be passed on to the browser (well, [except IE11 of course](https://caniuse.com/#feat=prefers-reduced-motion)). `prefers-reduced-motion` has two valid values: `reduced` and `no-motion`. To catch as many users as possible, you should wrap your animations in a media query, making the non-animated styling the default like so:
 
@@ -103,3 +103,22 @@ Luckily, you can help these users by using the [`prefers-reduced-motion` media q
   }
 }
 ```
+
+Even when the user hasn't set reduced motion you will want to limit animations to [no longer than 5 seconds or make it interruptible](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html). Things that are cool: Fade in animations, animate on hover. Things that are not cool: Animated background image, moving body text.
+
+## On SVG
+
+SVG are a special case in that they can act as 'regular' static images but can also be animated. Therefor but the static image and animation rules apply. In most cases you probably want to use an SVG as an image though. To make it accessible, you can use one of two approaches:
+
+```html
+<img class="svg-img" role="img" src="/static/image.svg" alt="Alt text here" />
+```
+
+```html
+<svg role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
+  <title>alt text here</title>
+  <!-- content here -->
+</svg>
+```
+
+Using an `img` tag is generally speaking a bit faster on render but if you want to dynamically manipulate the image the `svg` tag is the way to go.
