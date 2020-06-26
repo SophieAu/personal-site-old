@@ -4,7 +4,7 @@ date: 2020-06-26
 updated: 2020-06-26
 categories: javascript web-dev a11y
 slug: "web-a11y-big-picture"
-draft: true
+draft: false
 ---
 
 ## What is A11Y and Who is it for?
