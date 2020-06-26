@@ -12,7 +12,8 @@
     "clean": "gatsby clean",
     "checks": "tsc && npm run lint",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix"
+    "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "alex": "alex ./src/pages/blog-posts/"
   },
   "dependencies": {
     "gatsby": "^2.22.15",
