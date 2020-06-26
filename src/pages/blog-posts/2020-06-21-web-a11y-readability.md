@@ -1,7 +1,7 @@
 ---
 title: "Accessibility on the Web: Readability"
 date: 2020-06-21
-updated: 2020-06-23
+updated: 2020-06-26
 categories: javascript web-dev a11y
 slug: "web-a11y-readability"
 draft: false
@@ -76,6 +76,13 @@ navigator.languages
     : navigator.language || navigator.userLanguage || "en";
 ```
 
+And don't forget to set the document language in your `html` wrapper tag:
+```html
+<html lang="en-GB">
+  <!-- your site here -->
+</html>
+```
+
 ## Resources
 
 * [Who Can Use](https://whocanuse.com/): Add a color combination and check what it will look like for different visual deficiencies
@@ -87,3 +94,4 @@ navigator.languages
 * [Stark](https://www.getstark.co/): A plugin for your favourite design tool (Figma, Sketch, Adobe XD)
 
 * [Hemingway](https://hemingwayapp.com/): An online editor that checks your writing and highlights opportunities for improvement.
+* [alex.js](https://alexjs.com/): JS script to catch insensitive, inconsiderate writing in your text files.
