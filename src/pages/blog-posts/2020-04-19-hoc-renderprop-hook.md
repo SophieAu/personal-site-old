@@ -61,7 +61,7 @@ const ConsumingComp = () => (
 ## On Hooks
 Called `use<FUNCTIONALITY>`.
 
-Calling a hook gives you a completely isolated bunch of code. It's not stateful so all states and effects inside it only affect the component that's calling it. (Unless you fuck up in building your custom component of course).
+Calling a hook gives you a completely isolated bunch of code. It's not stateful so all states and effects inside it only affect the component that's calling it. (Unless you mess up in building your custom component of course).
 
 Using a hook feels a bit like using a HOC but you're calling it inside the component instead of wrapping the component.
 
