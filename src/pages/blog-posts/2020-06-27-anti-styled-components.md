@@ -7,7 +7,7 @@ slug: "anti-styled-components"
 draft: false
 ---
 
-Now, I'm not telling you to never use [styled components](https://styled-components.com/). They do have their uses. But they also have their drawbacks, including a really big one: They make it really easy to write inaccessible code. You don't have to but it's just a lot easier. And I know that I at least tend to go the path of least resistence which is why I like to make writing inaccessible code as hard as possible.
+Now, I'm not telling you to never use [Styled Components](https://styled-components.com/). They do have their uses. But they also have their drawbacks, including a really big one: They make it really easy to write inaccessible code. You don't have to but it's just a lot easier. And I know that I at least tend to go the path of least resistence which is why I like to make writing inaccessible code as hard as possible.
 
 Which is why I try to keep everyone from using styled components.
 
@@ -60,7 +60,7 @@ const Section = () => {
 }
 ```
 
-Or similarly, [linaria](https://linaria.now.sh/) offers almost the same experince while still being CSS-in-JS:
+Or similarly, [Linaria](https://linaria.now.sh/) offers almost the same experince while still being CSS-in-JS:
 
 ```javascript
 const buttonStyle = css`
