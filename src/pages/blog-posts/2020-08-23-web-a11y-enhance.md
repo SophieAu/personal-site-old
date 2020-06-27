@@ -37,7 +37,7 @@ Usually you'll want the link to be the first thing the user tabs to on the page 
   width: unset;
   top: 0;
   left: 0;
-  backgroundColor: white
+  background-color: white
 }
 </style>
 
