@@ -75,3 +75,25 @@ Usually you'll want the link to be the first thing the user tabs to on the page 
 ```
 
 ## Announce Dynamic Content
+
+To announce dynamic changes to the content on your page, you need to surround it in a `aria-live` region,. This region needs to exist before and after the change. Some `role`s will implicitly create aria live regions too. Note that the regions will also not be announced on their initial creation but only when their contents change. Make sure you create a aria-live region on initial render, even if it's gonna be empty to begin with. Also scope the region as far down as possible. Don't wrap the whole page in a region
+
+
+An `aria-live` region can have three values or Politness settings:
+
+* *off*: Nothing will be announced. This is essentially every 'normal' element i.e. as if you hadn't set `aria-live` at all
+* *polite*: The change will be announced once the user is not doing anything else. This is the one you should go to by fedault
+* *assertive*: A change will be announced as soon as possible which might mean interrupting the user or but it depends on the screen reader. Only use this for genuinely important updates (e.g. errors and crashes)
+
+
+
+### Roles
+
+
+Role 	Description 	Compatibility Notes
+log 	Chat, error, game or other type of log 	To maximize compatibility, add a redundant aria-live="polite" when using this role.
+status 	A status bar or area of the screen that provides an updated status of some kind. Screen reader users have a special command to read the current status. 	To maximize compatibility, add a redundant aria-live="polite" when using this role.
+alert 	Error or warning message that flashes on the screen. Alerts are particularly important for client side validation notices to users. (TBD: link to ARIA form tutorial with aria info) 	To maximize compatibility, some people recommend adding a redundant aria-live="assertive" when using this role. However, adding both aria-live and role="alert" causes double speaking issues in VoiceOver on iOS.
+progressbar 	A hybrid between a widget and a live region. Use this with aria-valuemin, aria-valuenow and aria-valuemax. (TBD: add more info here). 	
+marquee 	for text which scrolls, such as a stock ticker. 	
+timer 	or any kind of timer or clock, such as a countdown timer or stopwatch readout.
