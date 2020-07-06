@@ -42,7 +42,7 @@ There's another category of users though that fall under the accessibility umbre
 This persona is generally what apps and websites coming out of silicon valley and all the other big tech hubs in the 'West' have as a target user. Technically, catering to people who aren't on the disability spectrum but don't fall into the 'default user group' isn't part of accessibility but instead 'inclusive design' but in my experience those two go hand in hand.
 
 
-## Why Should You Care ?
+## Why Should You Care?
 
 Reason number one: Because it's the right thing to do. 
 
@@ -88,3 +88,4 @@ While there's no official guidelines on how accessible your website needs to be 
 * [A11y Rules](https://a11yrules.com/): Podcast with conversations around web accessilibity
 * [HTMLHell](https://www.htmhell.dev/): A blog about bad html code. Not necessarily built around accessibility but most of the issues have accessbibility implications too
 * [Vox Media's Accessibility Checklist](http://accessibility.voxmedia.com/): A checklist for all stages in your product lifecycle
+* [Manuel Matuzovic's Blogpost on optimizing websites for Screen Readers instead of Default Users](https://www.matuzo.at/blog/accessible-to-some/)
