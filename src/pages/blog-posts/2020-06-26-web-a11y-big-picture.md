@@ -1,7 +1,7 @@
 ---
 title: "Accessibility on the Web: The Big Picture"
 date: 2020-06-26
-updated: 2020-06-26
+updated: 2020-07-06
 categories: javascript web-dev a11y
 slug: "web-a11y-big-picture"
 draft: false
