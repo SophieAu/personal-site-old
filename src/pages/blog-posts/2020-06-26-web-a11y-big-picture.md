@@ -81,6 +81,8 @@ While there's no official guidelines on how accessible your website needs to be 
 * [Simply Accessible](http://simplyaccessible.com/)
 * [Fable Tech Labs](https://www.makeitfable.com/) (they don't have a blog though)
 * [deque](https://www.deque.com/) (the folks behind the axe browser extension)
+* [Intopia](https://intopia.digital/)
+* [Hassell Inclusion](https://www.hassellinclusion.com/)
 
 ### Other Links
 * [The A11Y Project](https://a11yproject.com/): Community-driven resources about all things a11y
