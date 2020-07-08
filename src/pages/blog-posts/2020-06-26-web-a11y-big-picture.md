@@ -73,6 +73,7 @@ While there's no official guidelines on how accessible your website needs to be 
 * [WAVE](https://wave.webaim.org/extension/)
 * [tota11y](https://khan.github.io/tota11y/)
 * [axe](https://www.deque.com/axe/)
+* [Accessibility Insights](https://accessibilityinsights.io/): Chrome and Edge only
 * [Pa11y](https://pa11y.org/): Not technically a browser extension but a command line tool
 
 ### Consulting Companies with Blogs
