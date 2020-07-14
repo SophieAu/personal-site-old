@@ -15,10 +15,10 @@ In order to release your packge on NPM you need to [create an account](https://w
 
 ## Step 2: Prepare your package for release
 
-In your package repo, run `npm init` and fill out everything you're asked for. That makes sure your package is ready for release
+In your package repo, run `npm init` and fill out everything you're asked for. That makes sure your package is ready for release.
 
 ## Step 3: Publish your package
 
 If everything works, the only thing that's missing is running `npm publish` to release the package.
 
-And that's pretty much it. Your package is now live on npm
+And that's pretty much it. Your package is now live on npm!
