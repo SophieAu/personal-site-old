@@ -1,7 +1,7 @@
 ---
 title: "Publishing you Package on NPM"
-date: 2020-99-99
-updated: 2020-99-99
+date: 2020-07-14
+updated: 2020-07-14
 categories: javascript opensource
 slug: "npm-publishing"
 draft: true
