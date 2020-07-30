@@ -1,10 +1,10 @@
 ---
-title: "Publishing you Package on NPM"
+title: "Publishing your Package on NPM"
 date: 2020-07-14
 updated: 2020-07-14
 categories: javascript opensource
 slug: "npm-publishing"
-draft: true
+draft: false
 ---
 
 You've build a cool javascript library or plugin and want to make it accessible to the world? Awesome! Here's how to do it:
