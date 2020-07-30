@@ -17,10 +17,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-csp',
       options: {
-        disableOnDev: true,
+        disableOnDev: false,
         mergeStyleHashes: false,
         directives: {
           'style-src': "'self' 'unsafe-inline' blob:",
+          'img-src': "'self' data: https://avatars1.githubusercontent.com/",
         },
       },
     },
