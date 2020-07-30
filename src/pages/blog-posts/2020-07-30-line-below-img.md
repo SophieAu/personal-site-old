@@ -4,7 +4,7 @@ date: 2020-07-30
 updated: 2020-07-30
 categories: javascript html css
 slug: "line-below-img"
-draft: true
+draft: false
 ---
 
 Having a weird spacing line below `<img />`s is the bane of my existence. So here I've documented the (usually) quick fix for everyone like me who always forgets:
