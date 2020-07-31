@@ -19,7 +19,7 @@ Therefore the main things to test are:
 
 On the more technical side, this means:
 
-- **Render Results**: What is actually being rendered? Snapshot tests can be helpful here. But don't over do it, since they break as soon as you change a single style value.
+- **Render Results**: What is actually being rendered? Snapshot tests can be helpful here. But don't overdo it, since they break as soon as you change a single style value.
 - **State Changes**: What do you do when your component is loading? Are there edge cases when updating state based on prop changes? How about loading errors?
 - **Changing Props**: What does the component render when you pass in props? How about `null`, `undefined`, `[]`?
 - **Changing Context**: How does the component react to changed context (e.g. language was switched)?
@@ -28,7 +28,7 @@ In accordance with the above principle, you should never access components by th
 
 Oh, and don't shallow render your component. Ever.
 
-## How to test an untested code base
+## How to Test an Untested Code Base
 
 In the best case scenario, all code is already under test. But reality is rarely the best case scenario. So, what do you test when you're looking at an untested code base? The guiding principle here is **"What would be the worst thing to break in this app?"**.
 
@@ -62,17 +62,17 @@ In a similar vein, don't overuse nesting in your tests. Generally, the structure
 
 ```js
 describe("ComponentUnderTest", () => {
-    it("does something",() => {})
+    it("does something", () => {})
 })
 ```
 
-The `describe` block is only there for prettier test output and the odd teardown and setup function. It should not contain any helpers or mocks! And don't start nesting `describe` in `describe` If you've gotten to that point, either merge them up into one longer test or use a new test file.
+The `describe` block is only there for prettier test output and the odd teardown and setup function. It should not contain any helpers or mocks! And don't start nesting `describe` in `describe`. If you've gotten to that point, either merge them up into one longer test or use a new test file.
 
 Usually, you get nested `describes` because you're trying to group one use case that you've split into multiple steps. This:
 
 ```js
 describe("ComponentUnderTest", () => {
- describe("to do something",() => {
+ describe("to do something", () => {
      it("does a", () => {})
      it("then does b", () => {})
      it("then does c", () => {})
