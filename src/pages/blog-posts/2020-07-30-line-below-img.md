@@ -38,7 +38,7 @@ You want to wrap an image in a container and have it take up the whole space. Bu
 
 ## The Solution
 
-The solution is (in most cases) a single line of CSS: You need to set `display: block` on the image. If you want to know more about why this is the solution, have a look at the [MDN Docs on the display property](https://developer.mozilla.org/en-US/docs/Web/CSS/display).
+The solution is (in most cases) a single line of CSS: You need to set `display: block` on the image. If you want to know more about why this is the solution, have a look at the [MDN docs on the display property](https://developer.mozilla.org/en-US/docs/Web/CSS/display).
 
 ```css
 .container {}
