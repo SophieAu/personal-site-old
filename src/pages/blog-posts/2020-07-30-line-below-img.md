@@ -2,7 +2,7 @@
 title: "How to fix that annoying space below your <img />"
 date: 2020-07-30
 updated: 2020-07-30
-categories: javascript html css
+categories: html css web-dev
 slug: "line-below-img"
 draft: false
 ---
