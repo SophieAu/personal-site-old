@@ -1,5 +1,5 @@
 ---
-title: "Building Non-Recangular Borders in CSS"
+title: "Non-Rectangular Borders in CSS"
 date: 2020-08-02
 updated: 2020-08-02
 categories: css web-dev html
