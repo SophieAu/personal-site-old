@@ -7,7 +7,7 @@ slug: "grid-tricks"
 draft: false
 ---
 
-## Have once column in content width, let the other(s) take the remaining space
+## Have one column in content width, let the other(s) take the remaining space
 
 ```css
 .grid {
