@@ -38,7 +38,7 @@ One of the most neglected and misused elements I constantly see is the humble `<
 1. Using buttons as links and links as buttons
 2. usng divs with `onclick` handlers as buttons
 
-Number one is easily remedied with a single question: Does the thing you click on _only_ redirect you to a different webpage? If yes, it should be a link. If there is any behaviour that is not just redirection it should be a button.
+Number one is easily remedied with a single question: Does the thing you click on _only_ redirect you to a different webpage? If yes, it should be a link. If there is any interactive behaviour that is not just redirection it should be a button.
 
 The good thing here: Just because the element is a button, doesn't mean that it has to look like a button. If you want it to look like a link, style it as if it was a link. Same goes for `a` elements. Do you want it to look like a button? Just style it that way. The default styles are only a suggestion and as long as you're making sure you're [styling all states correctly]() you're free to do whatever you think looks best.
 
