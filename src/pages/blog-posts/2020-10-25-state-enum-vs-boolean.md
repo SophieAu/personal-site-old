@@ -9,7 +9,7 @@ draft: false
 
 Chances are, you're doing a lot of data fetching in your app. Which means that quite often you will have code that looks something like this:
 
-```js
+```ts
 const FetchComponent: React.FC = () => {
   const [isIdle, setIdle] = useState(true);
   const [data, setData] = useState<RequestData>();
@@ -45,7 +45,7 @@ It does it's job, but all the state variables are excusive to each other i.e. if
 
 To prevent that, let's use an enum like this:
 
-```js
+```ts
 enum State {
   IDLE = 'IDLE',
   LOADING = 'LOADING',
