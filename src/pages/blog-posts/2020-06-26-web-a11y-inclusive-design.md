@@ -1,7 +1,7 @@
 ---
 title: "Accessibility on the Web: Inclusive Design"
 date: 2020-06-26
-updated: 2020-06-26
+updated: 2020-11-29
 categories: web-dev a11y product-development
 slug: "web-a11y-inclusive-design"
 draft: false

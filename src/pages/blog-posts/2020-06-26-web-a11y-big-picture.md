@@ -1,7 +1,7 @@
 ---
 title: "Accessibility on the Web: The Big Picture"
 date: 2020-06-26
-updated: 2020-07-06
+updated: 2020-11-29
 categories: javascript web-dev a11y
 slug: "web-a11y-big-picture"
 draft: false
@@ -16,7 +16,7 @@ Making your app or website accessible means making it usable for all people rega
 * Neurological Disorders (e.g. autism, learning disabilities, epilepsy)
 * Hearing Impairments (e.g. deafness, tinnitus)
 
-According to the [WHO World report on disability](https://www.who.int/disabilities/world_report/2011/report/en/) around 15% of the world's population deals with some sort of permanent disability. And this excludes people who have temporary illnesses such as: a broken arm, lost their glasses, ...
+According to the [WHO World report on disability](https://www.who.int/disabilities/world_report/2011/report/en/) around 15% of the world's population deals with some sort of permanent disability. And this excludes people who have temporary or situational disabilities such as: a broken arm, lost their glasses, ...
 
 These people actually have a legal (and moral) right to access your app/website.
 
@@ -46,7 +46,7 @@ This persona is generally what apps and websites coming out of silicon valley an
 
 Reason number one: Because it's the right thing to do. 
 
-You'd think that would be a good enough argument but unfortunately management is usually like: "If we spend all our time making our app accessile instead of launching it we will have 0 users". While I get the sentiment, getting to a base-level of accessibility is usually not a lot of effort. Accessbility doesn't mean that your app needs to function 100% the way it does for people without accessibility aids. Just that it's 'accessible' (i.e. usable).
+You'd think that would be a good enough argument but unfortunately management is usually like: "If we spend all our time making our app accessible instead of launching it we will have 0 users". While I get the sentiment, getting to a base-level of accessibility is usually not a lot of effort. Accessbility doesn't mean that your app needs to function 100% the way it does for people without accessibility aids. Just that it's 'accessible' (i.e. usable).
 
 Having your app/website not usable also leaves you at the risk of getting sued (just as [Beyoncé did a while back](https://www.theguardian.com/music/2019/jan/04/beyonce-parkwood-entertainment-sued-over-website-accessibility)). The fear of getting sued usually makes management listen very closely.
 
@@ -75,6 +75,7 @@ While there's no official guidelines on how accessible your website needs to be 
 * [axe](https://www.deque.com/axe/)
 * [Accessibility Insights](https://accessibilityinsights.io/): Chrome and Edge only
 * [Pa11y](https://pa11y.org/): Not technically a browser extension but a command line tool
+* [Sa11y](https://ryersondmp.github.io/sa11y/)
 
 ### Consulting Companies with Blogs
 * [WebAIM](https://webaim.org/)
@@ -92,3 +93,6 @@ While there's no official guidelines on how accessible your website needs to be 
 * [HTMLHell](https://www.htmhell.dev/): A blog about bad html code. Not necessarily built around accessibility but most of the issues have accessbibility implications too
 * [Vox Media's Accessibility Checklist](http://accessibility.voxmedia.com/): A checklist for all stages in your product lifecycle
 * [Manuel Matuzovic's Blogpost on optimizing websites for Screen Readers instead of Default Users](https://www.matuzo.at/blog/accessible-to-some/)
+* [A11y Coffee](https://a11y.coffee/): A small side with a short overview on web accessibility and a ton of links to other resources
+* [a11yresources](https://a11yresources.webflow.io/): A huge list of web accessibility resources
+* [Accessibility Acceptance Criteria](https://a11yengineer.com/): Let's you build your own accessibliity checklist
