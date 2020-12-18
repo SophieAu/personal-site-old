@@ -2,7 +2,7 @@ export const meta = {
   name: 'Sophie Au',
   siteDescription: 'Homepage of Sophie Au',
   intro: 'Software Developer, Web Designer, Tea Enthusiast',
-  blurb: `I truly believe in Dieter Braun's "Less but better". Not just in relation to design but also when it comes to writing software and organisational processes. My number one goal is to delight the customer from day one. Currently, I'm doing this in my role as software engineer at Donut.`,
+  blurb: `I truly believe in Dieter Braun's "Less but better". Not just in relation to design but also when it comes to writing software and organisational processes. My number one goal is to delight the customer from day one. Currently, I'm doing this as co-founder of RadioEye.`,
   copyright: ({ name, date }: { name: string; date: number }) => `© ${name}, ${date}`,
 };
 
