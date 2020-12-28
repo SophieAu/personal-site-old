@@ -11,9 +11,10 @@ draft: false
 
 While there doesn't seem to be consent, I differentiate between these three things using the example `git commit --message "Commit Message Here"`:
 
-1. Flags/Options. (Usually Optional) named parameters in the command (`--message` and its short code `-m`)
-2. Arguments. The value of the parameter (`"Commit Message Here"`)
-3. Subcommand (`commit`)
+1. Command. The 'name' of the CLI (`git`)
+2. Flags/Options. (Usually Optional) named parameters in the command (`--message` and its short code `-m`)
+3. Arguments. The value of the parameter (`"Commit Message Here"`)
+4. Subcommand (`commit`)
 
 Furthermore, I differentiate between:
 
@@ -21,7 +22,7 @@ Furthermore, I differentiate between:
 2. __CL Tool__: CLI interface for an app that 'lives' somewhere else (e.g. `netlify-cli`, `npm`). Expected to be used in scripts
 3. __Script__: Short-ish bash script used to conditionally chain together other CL tools and apps
 
-The collective term for all three is __CLI__ s (short for 'Command Line Interface').
+The collective term for all three is __CLI__ (short for 'Command Line Interface').
 
 
 ## General Rules
@@ -41,14 +42,14 @@ The collective term for all three is __CLI__ s (short for 'Command Line Interfac
 * CL tools should have a detailed `man` page and online documentation
 
 
-### Output and Error Handling
+## Output and Error Handling
 
 * Only exit with a non-zero status code if the program actually terminated with an error
 * When there is an error, make sure to give the user a useful error message: What, where, why, error code if applicable, how to resolve, and/or who to contact
 * `stderr` should only get status, warning and error messages
 
 
-### On Flags/Options
+## On Flags/Options
 
 * Every option that can have a default option should have a default option. And this default option should be the 'least dangerous' option. E.g. deletion and override should never be the default
 * Provide long, readable option names with short aliases (e.g. `--help` and `-h`).
