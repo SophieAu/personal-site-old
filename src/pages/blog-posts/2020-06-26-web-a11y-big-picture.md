@@ -1,7 +1,7 @@
 ---
 title: "Accessibility on the Web: The Big Picture"
 date: 2020-06-26
-updated: 2020-11-29
+updated: 2021-07-06
 categories: javascript web-dev a11y
 slug: "web-a11y-big-picture"
 draft: false
@@ -90,9 +90,10 @@ While there's no official guidelines on how accessible your website needs to be 
 * [The A11Y Project](https://a11yproject.com/): Community-driven resources about all things a11y
 * [A11yWeekly](https://a11yweekly.com/): Weekly newsletter about all things web accessibility
 * [A11y Rules](https://a11yrules.com/): Podcast with conversations around web accessilibity
-* [HTMLHell](https://www.htmhell.dev/): A blog about bad html code. Not necessarily built around accessibility but most of the issues have accessbibility implications too
+* [HTMLHell](https://www.htmhell.dev/): A blog about bad html code. Not necessarily built around accessibility but most of the issues have accessibility implications too
 * [Vox Media's Accessibility Checklist](http://accessibility.voxmedia.com/): A checklist for all stages in your product lifecycle
 * [Manuel Matuzovic's Blogpost on optimizing websites for Screen Readers instead of Default Users](https://www.matuzo.at/blog/accessible-to-some/)
 * [A11y Coffee](https://a11y.coffee/): A small side with a short overview on web accessibility and a ton of links to other resources
 * [a11yresources](https://a11yresources.webflow.io/): A huge list of web accessibility resources
 * [Accessibility Acceptance Criteria](https://a11yengineer.com/): Let's you build your own accessibliity checklist
+* [A Complete Guide To Accessible Front-End Components](https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/): As it says on the tin, a guide on how to make sure some of the most popular front-end patterns are accessible
