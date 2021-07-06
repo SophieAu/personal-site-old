@@ -7,7 +7,7 @@ slug: "react-project-structure"
 draft: false
 ---
 
-This is my personal guideline on how I structure my react projects (which are mostly static sites). It's what works for me but don't take this as gospel. Note that this folder assumes that the project is using [TypeScript](https://www.typescriptlang.org/) and [linaria](https://linaria.now.sh/). It should be easy enough to translate it to JavaScript and e.g. [CSS Modules](https://github.com/css-modules/css-modules).
+This is my personal guideline on how I structure my React projects (which are mostly static sites). It's what works for me but don't take this as gospel. Note that this folder assumes that the project is using [TypeScript](https://www.typescriptlang.org/) and [linaria](https://linaria.now.sh/). It should be easy enough to translate it to JavaScript and e.g. [CSS Modules](https://github.com/css-modules/css-modules).
 
 ## Some Notes before we get started
 
@@ -69,7 +69,7 @@ The structure in root is as follows:
 - `templates/`          -> the gatsby specific folder for auto-generated pages (e.g. blog posts)
 - `index.ts`            -> init file
 - `_variables.style.ts` -> your css variables (if applicable)
-- `util.ts`             ->  potentially a folder with subfiles
+- `util.ts`             -> potentially a folder with subfiles
 - `fragments.ts`        -> graphql fragments
 - `types.ts`            -> custom types
 - `index.d.ts`          -> for missing 3rd party types and image typing
