@@ -13,7 +13,7 @@ Chances are, you're doing a lot of data fetching in your app. Which means that q
 const FetchComponent: React.FC = () => {
   const [isIdle, setIdle] = useState(true);
   const [data, setData] = useState<RequestData>();
-  const [isLoadng, setLoading] = useState(false);
+  const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState<RequestError>();
 
   const handleClick = async () => {
@@ -41,7 +41,7 @@ const FetchComponent: React.FC = () => {
 };
 ```
 
-It does it's job, but all the state variables are excusive to each other i.e. if there's an error, there's no data and the component isn't idle or loading. ut since all the states are decoupled from another this is just asking for an accidentally introduced bug.
+It does it's job, but all the state variables are excusive to each other i.e. if there's an error, there's no data and the component isn't idle or loading. But since all the states are decoupled from another this is just asking for an accidentally introduced bug.
 
 To prevent that, let's use an enum like this:
 
